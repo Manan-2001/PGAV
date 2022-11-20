@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+$blue: #131a22;
+$blue2: #232f3e;
+
+$off-white: #ddd;
+
+$black: #0f1111;
+
+.carousel-item-images {
+  height: 490px;
+  width: auto;
+}
+
+.slider-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.slider-main {
+  position: relative;
+  overflow: hidden;
+}
+.item {
+  display: inline;
+  position: relative;
+  margin: 0px 10px;
+  border-radius: 4px;
+  min-height: 430px;
+  max-height: 430px;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: transparent;
+}
+
+.item-image {
+  height: 300px;
+  width: 250px;
+}
+
+.prev {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 35px;
+  bottom: 200px;
+  border: none;
+  background-color: #232f3e;
+  color: #ddd;
+}
+
+.next {
+  position: relative;
+  transform: translate(-50%, -50%);
+  bottom: 200px;
+  left: 1210px;
+  border: none;
+  background-color: #232f3e;
+  color: #ddd;
+}
