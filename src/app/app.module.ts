@@ -14,6 +14,9 @@ import { PrevApplianceButtonDirective } from './appliances/buttons/for Appliance
 import { PrevFurnitureButtonDirective } from './appliances/buttons/for furniture list/prev-furniture-button.directive';
 import { NextApplianceButtonDirective } from './appliances/buttons/for Appliance list/next-appliance-button.directive';
 import { NextFurnitureButtonDirective } from './appliances/buttons/for furniture list/next-furniture-button.directive';
+import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { NextFurnitureButtonDirective } from './appliances/buttons/for furniture
     PrevApplianceButtonDirective,
     PrevFurnitureButtonDirective,
     NextApplianceButtonDirective,
-    NextFurnitureButtonDirective
+    NextFurnitureButtonDirective,
+    LoginComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
