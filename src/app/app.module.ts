@@ -10,6 +10,11 @@ import { AppliancesComponent } from './appliances/appliances.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { PrevApplianceButtonDirective } from './appliances/buttons/for Appliance list/prev-appliance-button.directive';
+import { PrevFurnitureButtonDirective } from './appliances/buttons/for furniture list/prev-furniture-button.directive';
+import { NextApplianceButtonDirective } from './appliances/buttons/for Appliance list/next-appliance-button.directive';
+import { NextFurnitureButtonDirective } from './appliances/buttons/for furniture list/next-furniture-button.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,12 @@ import { FooterComponent } from './footer/footer.component';
     AccomodationComponent,
     AppliancesComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+
+    PrevApplianceButtonDirective,
+    PrevFurnitureButtonDirective,
+    NextApplianceButtonDirective,
+    NextFurnitureButtonDirective
   ],
   imports: [
     BrowserModule,
