@@ -1,14 +1,14 @@
-
-<nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(245, 245, 245, 0.671);">
+<div style="background-color: rgba(245, 245, 245, 0.671);">
+  <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(245, 245, 245, 0.671);">
     <div class="container-fluid">
         <img class="navbar-brand" src="../assets/image/PGAV.png" style="height:30px; width:210px;margin-left:2%;">
-
+        
           <input class="form-control " type="text" placeholder="   Search" style="margin-left:5% ; border-radius:25px ; border-color: lightslategray; font-size: 15pt;">
           <button class="btn btn-outline-primary"  type="button" style="margin-left: 1%; border-radius: 14px;font-size: 13pt;">Search
           </button>
       
           <button class="btn btn-outline-light btn-sm" style="width:100px; border-radius: 25px;margin-left: 7%;">
-            <a class="nav-link text-black"  style="font-size:13pt ;"> <b>Home</b></a>
+            <a class="nav-link text-black"  style="font-size:13pt ;" routerLink="home"> <b>Home</b></a>
           </button>
           <button class="btn btn-outline-light btn-sm" style="width:100px; border-radius: 25px;margin-left: 1%;"data-bs-toggle="collapse" data-bs-target="#demo">
             <a class="nav-link text-black"  style="font-size:13pt ;"> <b>Services <i  class="fa">&#xf103;</i></b></a>
@@ -44,9 +44,105 @@
     </div>
 </div>
   </div>
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col">
+  
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          </div>
+  
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <img src="../app/home/image/download.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                </div>
+                <div class="col">
+                  <h2 
+                  style="font-size: 15pt;
+                  font-style:italic;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                  >FIND YOUR NEXT HOME
+                </h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="../home/image/tiffin.jpg" alt="Chicago" class="d-block" style="width:100%">
+                </div>
+                <div class="col">
+                  <h2 
+                  style="font-size: 15pt;
+                  font-style:italic;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                  >FIND YOUR DELICIOUS FOOD
+                </h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="../home/image/vehicle.jpg" alt="New York" class="d-block" style="width:100%">
+                </div>
+                <div class="col">
+                  <h2 
+                  style="font-size: 15pt;
+                  font-style:italic;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                  >FIND YOUR PRIVATE VEHICLE
+                </h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img src="../home/image/appliances.jpg" alt="New York" class="d-block" style="width:100%">
+                </div>
+                <div class="col">
+                  <h2 
+                  style="font-size: 15pt;
+                  font-style:italic;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                  >FIND YOUR NEXT HOME
+                </h2>
+                </div>
+              </div>            
+            </div>
+          </div>
+  
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      
+      </div>
+  
+    </div>
+  
+  
 
-<h1>PGAV Services</h1>
+
 
 <!-- <h1>PGAV Services</h1> -->
 
 <router-outlet></router-outlet>
+
+</div>
