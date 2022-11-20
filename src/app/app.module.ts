@@ -15,7 +15,13 @@ import { PrevApplianceButtonDirective } from './appliances/buttons/for Appliance
 import { PrevFurnitureButtonDirective } from './appliances/buttons/for furniture list/prev-furniture-button.directive';
 import { NextApplianceButtonDirective } from './appliances/buttons/for Appliance list/next-appliance-button.directive';
 import { NextFurnitureButtonDirective } from './appliances/buttons/for furniture list/next-furniture-button.directive';
+<<<<<<< HEAD
 import { HomeComponent } from './home/home.component';
+=======
+import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+>>>>>>> ca2b5e69c30a83a90181ddc235167384691e5722
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { HomeComponent } from './home/home.component';
     PrevFurnitureButtonDirective,
     NextApplianceButtonDirective,
     NextFurnitureButtonDirective,
+<<<<<<< HEAD
     HomeComponent
+=======
+    LoginComponent,
+    AboutComponent,
+    ContactComponent
+>>>>>>> ca2b5e69c30a83a90181ddc235167384691e5722
   ],
   imports: [
     BrowserModule,
