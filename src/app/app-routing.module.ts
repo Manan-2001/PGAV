@@ -27,10 +27,7 @@ const routes: Routes = [
     path:"tiffin",
     component:TiffinComponent
    },
-   {
-    path:"home",
-    component:HomeComponent
-   },
+   
    
   
 
