@@ -16,9 +16,11 @@ import { PrevFurnitureButtonDirective } from './appliances/buttons/for furniture
 import { NextApplianceButtonDirective } from './appliances/buttons/for Appliance list/next-appliance-button.directive';
 import { NextFurnitureButtonDirective } from './appliances/buttons/for furniture list/next-furniture-button.directive';
 import { HomeComponent } from './home/home.component';
+import { FaqPageComponent} from './faq-page/faq-page.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +38,13 @@ import { ContactComponent } from './contact/contact.component';
     NextApplianceButtonDirective,
     NextFurnitureButtonDirective,
     HomeComponent,
+
+    LoginComponent,
+    AboutComponent,
+    ContactComponent,
+
+    FaqPageComponent,
+
     LoginComponent,
     AboutComponent,
     ContactComponent

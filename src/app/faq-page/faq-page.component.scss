@@ -1,0 +1,71 @@
+@media screen and (max-width: 425px) and (min-width: 425px) {
+  .faqHeading {
+    margin: 10px;
+  }
+  #faq-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "arimo", sans-serif;
+  }
+  .accordian-wrapper {
+    margin: 20px;
+  }
+  .accordion-button {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "arimo", sans-serif;
+  }
+  .accordion-body {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "arimo", sans-serif;
+  }
+}
+
+@media screen and(max-width: 768px) and (min-width: 426px) {
+  .faqHeading {
+    margin: 20px;
+  }
+  #faq-title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "arimo", sans-serif;
+  }
+  .accordian-wrapper {
+    margin: 20px;
+    width: 100%;
+  }
+  .accordion-button {
+    font-size: 27px;
+    font-weight: 300;
+    font-family: "arimo", sans-serif;
+  }
+  .accordion-body {
+    font-size: 25px;
+    font-family: "arimo", sans-serif;
+  }
+}
+
+@media screen and( min-width: 769px) {
+  .faqHeading {
+    margin: 30px;
+  }
+  #faq-title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "arimo", sans-serif;
+  }
+  .accordian-wrapper {
+    margin: 30px;
+    width: 96%;
+  }
+  .accordion-button {
+    font-size: 27px;
+    font-weight: 300;
+    font-family: "arimo", sans-serif;
+  }
+  .accordion-body {
+    font-size: 25px;
+    font-family: "arimo", sans-serif;
+  }
+}
