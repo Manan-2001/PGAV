@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
+import { OffersComponent } from './offers/offers.component';
 
 const routes: Routes = [
 
@@ -56,6 +57,11 @@ const routes: Routes = [
   {
     path: "Contact",
     component: ContactComponent
+  },
+
+  {
+    path: "offers",
+    component: OffersComponent
   }
 
 
