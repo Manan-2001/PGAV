@@ -19,6 +19,13 @@ const routes: Routes = [
     component: LoginComponent
   },
 
+   {
+    path:"tiffin",
+    component:TiffinComponent
+   },
+   
+   
+  
 
   {
     path: "Accomodation",
