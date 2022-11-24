@@ -21,6 +21,12 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
+
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { OffersComponent } from './offers/offers.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +47,10 @@ import { LoginComponent } from './login/login.component';
     FaqPageComponent,
 
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent,
+    OffersComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
