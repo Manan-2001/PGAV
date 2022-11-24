@@ -10,22 +10,19 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { OffersComponent } from './offers/offers.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-
 
   {
     path: "",
     component: LoginComponent
   },
 
-   {
-    path:"tiffin",
-    component:TiffinComponent
-   },
-   
-   
-  
+  {
+    path: "tiffin",
+    component: TiffinComponent
+  },
 
   {
     path: "Accomodation",
@@ -69,9 +66,11 @@ const routes: Routes = [
   {
     path: "offers",
     component: OffersComponent
+  },
+  {
+    path: "register",
+    component: RegistrationComponent
   }
-
-
 
 ];
 
