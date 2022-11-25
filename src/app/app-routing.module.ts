@@ -15,7 +15,7 @@ import { RegistrationComponent } from './registration/registration.component';
 const routes: Routes = [
 
   {
-    path: "",
+    path: "Login",
     component: LoginComponent
   },
 
