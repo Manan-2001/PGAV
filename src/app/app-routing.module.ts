@@ -14,18 +14,9 @@ const routes: Routes = [
 
 
   {
-    path: "",
+    path: "Login",
     component: LoginComponent
   },
-
-   {
-    path:"tiffin",
-    component:TiffinComponent
-   },
-   
-   
-  
-
   {
     path: "Accomodation",
     component: AccomodationComponent
