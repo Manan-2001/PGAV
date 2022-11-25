@@ -18,15 +18,12 @@ const routes: Routes = [
     path: "Login",
     component: LoginComponent
   },
-<<<<<<< HEAD
-=======
 
   {
     path: "tiffin",
     component: TiffinComponent
   },
 
->>>>>>> 0e51132be641e3fa1e77f4ba1a94895a223c22d9
   {
     path: "Accomodation",
     component: AccomodationComponent
