@@ -9,14 +9,21 @@ import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
+import { OffersComponent } from './offers/offers.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-
 
   {
     path: "Login",
     component: LoginComponent
   },
+
+  {
+    path: "tiffin",
+    component: TiffinComponent
+  },
+
   {
     path: "Accomodation",
     component: AccomodationComponent
@@ -54,9 +61,16 @@ const routes: Routes = [
   {
     path: "Contact",
     component: ContactComponent
+  },
+
+  {
+    path: "offers",
+    component: OffersComponent
+  },
+  {
+    path: "register",
+    component: RegistrationComponent
   }
-
-
 
 ];
 

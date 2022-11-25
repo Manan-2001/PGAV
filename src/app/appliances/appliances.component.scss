@@ -3,57 +3,335 @@
 
 $blue: #131a22;
 $blue2: #232f3e;
-
 $off-white: #ddd;
-
 $black: #0f1111;
 
-.carousel-item-images {
-  height: 490px;
-  width: auto;
+@media screen and (min-width: 1024px) {
+  .carousel {
+    height: 490px;
+  }
+  .carousel-item {
+    img {
+      height: 490px;
+      width: 100%;
+    }
+  }
+
+  .row {
+    // background-color: aquamarine;
+    width: 99%;
+    gap: 0px 70px;
+    margin-left: 5px;
+    height: 240px;
+  }
+
+  .appliances {
+    // background-color: red;
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  .appliances-img {
+    background-size: cover;
+    height: 230px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .appliances-text {
+    font-size: 45px;
+    margin-left: 135px;
+    margin-top: 85px;
+    color: aliceblue;
+    font-family: "arima";
+  }
+
+  .furniture {
+    // background-color: grey;
+    border-radius: 10px;
+    width: 500px;
+  }
+
+  .furniture-img {
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .furniture-text {
+    font-size: 45px;
+    margin-left: 135px;
+    margin-top: 85px;
+    color: aliceblue;
+    font-family: "arima";
+  }
+
+  .appliances-item-slider {
+    // background-color: #9b9b9b;
+    height: 600px;
+  }
+
+  .appliances-item-title {
+    font-size: 30px;
+    font-weight: 450;
+    font-family: "arima";
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .furniture-item-title {
+    font-size: 30px;
+    font-weight: 450;
+    font-family: "arima";
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .slider-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .item {
+    display: inline;
+    position: relative;
+    margin: 0px 10px;
+    border-radius: 4px;
+    min-width: 280px;
+    min-height: 350px;
+  }
+  .item-image {
+    height: 230px;
+    width: 270px;
+  }
+  .item-image-title-text {
+    font-weight: 500;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "arima";
+  }
+  .item-image-price-text {
+    font-weight: 500;
+    color: rgb(70, 70, 218);
+    display: inline;
+    font-size: 18px;
+    font-family: "arima";
+  }
+
+  .item-image-msrp-price-text {
+    font-weight: 500;
+    color: grey;
+    display: inline;
+    text-decoration: line-through;
+    font-family: "arima";
+  }
+  .rent-now-button {
+    margin-top: 10px;
+    margin-left: 90px;
+  }
+
+  .prev {
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #232f3e;
+    color: #ddd;
+    top: -390px;
+    left: 1195px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .next {
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #2a70c5;
+    color: #ddd;
+    top: -390px;
+    left: 1200px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
-.slider-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.slider-main {
-  position: relative;
-  overflow: hidden;
-}
-.item {
-  display: inline;
-  position: relative;
-  margin: 0px 10px;
-  border-radius: 4px;
-  min-height: 430px;
-  max-height: 430px;
-  min-width: 280px;
-  max-width: 280px;
-  background-color: transparent;
-}
+@media screen and (max-width: 430px) {
+  .carousel {
+    height: 200px;
+  }
+  .carousel-item {
+    img {
+      height: 200px;
+      width: 100%;
+    }
+  }
 
-.item-image {
-  height: 300px;
-  width: 250px;
-}
+  .row {
+    width: 100%;
+    // background-color: aquamarine;
+    margin-left: 3px;
 
-.prev {
-  position: relative;
-  transform: translate(-50%, -50%);
-  left: 35px;
-  bottom: 200px;
-  border: none;
-  background-color: #232f3e;
-  color: #ddd;
-}
+    gap: 20px;
+  }
 
-.next {
-  position: relative;
-  transform: translate(-50%, -50%);
-  bottom: 200px;
-  left: 1210px;
-  border: none;
-  background-color: #232f3e;
-  color: #ddd;
+  .appliances {
+    // background-color: red;
+    width: 100%;
+  }
+
+  .appliances-img {
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  .appliances-text {
+    font-size: 35px;
+    margin-left: 100px;
+    margin-top: 45px;
+    color: aliceblue;
+    font-family: "arima";
+  }
+
+  .furniture {
+    // background-color: grey;
+    width: 100%;
+  }
+
+  .furniture-img {
+    background-size: cover;
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  .furniture-text {
+    font-size: 35px;
+    color: white;
+    margin-left: 100px;
+    margin-top: 45px;
+
+    font-family: "arima";
+  }
+
+  .appliances-item-slider {
+    // background-color: #9b9b9b;
+    height: 370px;
+  }
+
+  .appliances-item-title {
+    font-size: 25px;
+    font-weight: 450;
+    font-family: "arima";
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .furniture-item-title {
+    font-size: 25px;
+    font-weight: 450;
+    font-family: "arima";
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .slider-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .item {
+    display: inline;
+    position: relative;
+    margin: 0px 10px;
+    border-radius: 4px;
+    min-width: 180px;
+    min-height: 260px;
+  }
+  .item-image {
+    height: 130px;
+    width: 170px;
+  }
+  .item-image-title-text {
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "arima";
+  }
+  .item-image-price-text {
+    font-weight: 500;
+    color: rgb(70, 70, 218);
+    display: inline;
+    font-size: 17px;
+    font-family: "arima";
+  }
+
+  .item-image-msrp-price-text {
+    font-weight: 500;
+    color: grey;
+    display: inline;
+    text-decoration: line-through;
+    font-family: "arima";
+  }
+  .rent-now-button {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .prev {
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: #232f3e;
+    color: #ddd;
+    top: -290px;
+    left: 320px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .next {
+    position: relative;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #2a70c5;
+    color: #ddd;
+    top: -290px;
+    left: 320px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
