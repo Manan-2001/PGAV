@@ -9,7 +9,6 @@ import { AccomodationComponent } from './accomodation/accomodation.component';
 import { AppliancesComponent } from './appliances/appliances.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { TifComponent } from './tif/tif.component';
 
 import { PrevApplianceButtonDirective } from './appliances/buttons/for Appliance list/prev-appliance-button.directive';
 import { PrevFurnitureButtonDirective } from './appliances/buttons/for furniture list/prev-furniture-button.directive';
@@ -36,7 +35,6 @@ import { OffersComponent } from './offers/offers.component';
     AppliancesComponent,
     NavbarComponent,
     FooterComponent,
-    TifComponent,
 
     PrevApplianceButtonDirective,
     PrevFurnitureButtonDirective,
