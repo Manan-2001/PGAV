@@ -48,7 +48,8 @@ import { OffersComponent } from './offers/offers.component';
     LoginComponent,
     AboutComponent,
     OffersComponent,
-    ContactComponent
+    ContactComponent,
+
   ],
   imports: [
     BrowserModule,

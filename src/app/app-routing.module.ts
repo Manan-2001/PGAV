@@ -15,6 +15,11 @@ import { RegistrationComponent } from './registration/registration.component';
 const routes: Routes = [
 
   {
+    path: "",
+    component: HomeComponent
+  },
+
+  {
     path: "Login",
     component: LoginComponent
   },
@@ -67,11 +72,11 @@ const routes: Routes = [
     path: "offers",
     component: OffersComponent
   },
+
   {
-    path: "register",
+    path: "registration",
     component: RegistrationComponent
   }
-
 ];
 
 @NgModule({

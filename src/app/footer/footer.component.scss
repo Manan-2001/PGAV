@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+.appliances-text-center {
+  background-color: $projectBlue;
+}
+
+.appliances-submit-btn {
+  background-color: $projectBlue;
+  color: $off-white;
+
+  &:hover {
+    background-color: $projectBlue;
+    color: $off-white;
+  }
+}

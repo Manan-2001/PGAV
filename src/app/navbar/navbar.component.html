@@ -1,0 +1,107 @@
+<nav
+  class="navbar navbar-expand-sm navbar-dark"
+  style="background-color: rgba(245, 245, 245, 0.671)"
+>
+  <div class="container-fluid">
+    <img
+      class="navbar-brand"
+      src="../assets/image/PGAV.png"
+      style="height: 30px; width: 210px; margin-left: 2%"
+    />
+
+    <img
+      src="../assets/image/PGAV.png"
+      style="height: 30px; width: 210px; margin-left: 2%"
+    />
+
+    <input
+      class="form-control"
+      type="text"
+      placeholder="   Search"
+      style="
+        margin-left: 5%;
+        border-radius: 25px;
+        border-color: lightslategray;
+        font-size: 15pt;
+      "
+    />
+    <button
+      class="btn btn-outline-primary"
+      type="button"
+      style="margin-left: 1%; border-radius: 14px; font-size: 13pt"
+    >
+      Search
+    </button>
+
+    <button
+      class="btn btn-outline-light btn-sm"
+      style="width: 100px; border-radius: 25px; margin-left: 7%"
+    >
+      <a class="nav-link text-black" style="font-size: 13pt" routerLink="home">
+        <b>Home</b></a
+      >
+    </button>
+    <button
+      class="btn btn-outline-light btn-sm"
+      style="width: 100px; border-radius: 25px; margin-left: 1%"
+      data-bs-toggle="collapse"
+      data-bs-target="#demo"
+    >
+      <a class="nav-link text-black" style="font-size: 13pt">
+        <b>Services <i class="fa">&#xf103;</i></b></a
+      >
+    </button>
+    <button
+      class="btn btn-outline-light btn-sm"
+      style="width: 100px; border-radius: 25px; margin-left: 1%"
+    >
+      <a
+        class="nav-link text-black"
+        style="font-size: 13pt"
+        routerLink="offers"
+      >
+        <b>Offers %</b></a
+      >
+    </button>
+    <button
+      class="btn btn-outline-light btn-sm"
+      style="width: 100px; border-radius: 25px; margin-left: 1%"
+    >
+      <a class="nav-link text-black" style="font-size: 13pt">
+        <b><i style="font-size: 24px" class="fa">&#xf290;</i> Cart</b></a
+      >
+    </button>
+    <button
+      class="btn btn-outline-light btn-sm"
+      routerLink="Login"
+      style="width: 100px; border-radius: 25px; margin-left: 2%"
+    >
+      <a class="nav-link text-black" style="font-size: 15pt"> <b>Login</b></a>
+    </button>
+  </div>
+</nav>
+
+<div id="demo" class="collapse">
+  <div class="row" style="margin-top: -20px">
+    <div class="col">
+      <button class="btn btn-success btn-block" routerLink="Accomodation">
+        Accomodation
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-success btn-block" routerLink="tiffin">
+        Tiffin
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-success btn-block" routerLink="vehicle">
+        Vehicle
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-success btn-block" routerLink="Appliances">
+        Appliances
+      </button>
+    </div>
+  </div>
+</div>
