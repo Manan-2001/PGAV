@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
-
-$blue: #131a22;
-$blue2: #232f3e;
-$off-white: #ddd;
-$black: #0f1111;
+@import "../../styles.scss";
 
 @media screen and (min-width: 1024px) {
+  .carousel-header {
+    // background-color: aqua;
+    height: 500px;
+  }
   .carousel {
     height: 490px;
   }
@@ -17,12 +15,19 @@ $black: #0f1111;
     }
   }
 
+  .twoCatagories {
+    margin: 15px 0px;
+    // background-color: #2a70c5;
+    height: 260px;
+  }
+
   .row {
     // background-color: aquamarine;
+    padding: 10px 0px;
     width: 99%;
     gap: 0px 70px;
     margin-left: 5px;
-    height: 240px;
+    height: 250px;
   }
 
   .appliances {
@@ -42,7 +47,7 @@ $black: #0f1111;
     font-size: 45px;
     margin-left: 135px;
     margin-top: 85px;
-    color: aliceblue;
+    color: $off-white;
     font-family: "arima";
   }
 
@@ -63,13 +68,13 @@ $black: #0f1111;
     font-size: 45px;
     margin-left: 135px;
     margin-top: 85px;
-    color: aliceblue;
+    color: $off-white;
     font-family: "arima";
   }
 
   .appliances-item-slider {
     // background-color: #9b9b9b;
-    height: 600px;
+    height: 500px;
   }
 
   .appliances-item-title {
@@ -81,6 +86,11 @@ $black: #0f1111;
       width: 20px;
       height: 20px;
     }
+  }
+
+  .furniture-item-slider {
+    // background-color: #0047ab;
+    height: 500px;
   }
 
   .furniture-item-title {
@@ -138,23 +148,41 @@ $black: #0f1111;
     text-decoration: line-through;
     font-family: "arima";
   }
-  .rent-now-button {
+  .rent-now {
     margin-top: 10px;
     margin-left: 90px;
+  }
+
+  .rent-now-button {
+    background-color: $projectBlue;
+    color: $off-white;
+
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
+    }
+  }
+
+  .button-area {
+    // background-color: aqua;
   }
 
   .prev {
     position: relative;
     transform: translate(-50%, -50%);
     border: none;
-    background-color: #232f3e;
-    color: #ddd;
+    background-color: $projectBlue;
+    color: $off-white;
     top: -390px;
-    left: 1195px;
+    left: 1190px;
 
     svg {
       width: 20px;
       height: 20px;
+    }
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
     }
   }
 
@@ -162,18 +190,26 @@ $black: #0f1111;
     position: relative;
     transform: translate(-50%, -50%);
     border: none;
-    background-color: #2a70c5;
-    color: #ddd;
+    background-color: $projectBlue;
+    color: $off-white;
     top: -390px;
     left: 1200px;
     svg {
       width: 20px;
       height: 20px;
     }
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
+    }
   }
 }
 
 @media screen and (max-width: 430px) {
+  .carousel-header {
+    // background-color: aqua;
+    height: 220px;
+  }
   .carousel {
     height: 200px;
   }
@@ -184,6 +220,10 @@ $black: #0f1111;
     }
   }
 
+  .twoCatagories {
+    margin: 15px 0px;
+    // background-color: #2a70c5;
+  }
   .row {
     width: 100%;
     // background-color: aquamarine;
@@ -207,7 +247,7 @@ $black: #0f1111;
     font-size: 35px;
     margin-left: 100px;
     margin-top: 45px;
-    color: aliceblue;
+    color: $off-white;
     font-family: "arima";
   }
 
@@ -224,7 +264,7 @@ $black: #0f1111;
 
   .furniture-text {
     font-size: 35px;
-    color: white;
+    color: $off-white;
     margin-left: 100px;
     margin-top: 45px;
 
@@ -246,6 +286,10 @@ $black: #0f1111;
       height: 15px;
     }
   }
+
+  .furniture-item-slider {
+    // background-color: blueviolet;
+  }
   .furniture-item-title {
     font-size: 25px;
     font-weight: 450;
@@ -264,6 +308,7 @@ $black: #0f1111;
   .slider-main {
     position: relative;
     overflow: hidden;
+    margin-left: -25px;
   }
 
   .item {
@@ -301,23 +346,36 @@ $black: #0f1111;
     text-decoration: line-through;
     font-family: "arima";
   }
-  .rent-now-button {
+  .rent-now {
     margin-top: 10px;
     margin-left: 40px;
+  }
+  .rent-now-button {
+    background-color: $projectBlue;
+    color: $off-white;
+
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
+    }
   }
 
   .prev {
     position: relative;
     transform: translate(-50%, -50%);
     border: none;
-    background: #232f3e;
-    color: #ddd;
+    background: $projectBlue;
+    color: $off-white;
     top: -290px;
     left: 320px;
 
     svg {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
+    }
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
     }
   }
 
@@ -325,13 +383,19 @@ $black: #0f1111;
     position: relative;
     transform: translate(-50%, -50%);
     border: none;
-    background-color: #2a70c5;
-    color: #ddd;
+    background-color: $projectBlue;
+    color: $off-white;
     top: -290px;
     left: 320px;
+    margin-left: 5px;
     svg {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      background-color: $projectBlue;
+      color: $off-white;
     }
   }
 }
