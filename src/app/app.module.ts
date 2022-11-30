@@ -25,6 +25,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { OffersComponent } from './offers/offers.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     OffersComponent,
     ContactComponent,
     CheckoutComponent,
+    DashboardComponent,
 
   ],
   imports: [

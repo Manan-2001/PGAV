@@ -12,6 +12,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { OffersComponent } from './offers/offers.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
 
@@ -81,7 +82,11 @@ const routes: Routes = [
   {
     path: "registration",
     component: RegistrationComponent
-  }
+  },
+  {
+    path: "dashboard",
+    component: DashboardComponent
+  },
 ];
 
 @NgModule({
