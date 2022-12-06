@@ -1,15 +1,18 @@
-<!-- The sidebar -->
-<div class="sidebar" style="margin-top: -20px;">
-    <a class="active" href="#home">Dashboard</a>
-    <a href="#news">Profile</a>
-    <a href="#news">Products</a>
-    <a href="#contact">Cart Page</a>
-    <a href="#about">Orders</a>
-    <a href="#about">Analytics</a>
-    <a href="#about">Logout</a>
-  </div>
-  
-  <!-- Page content -->
-  <div class="content">
-    ..
-  </div>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened="">
+        <mat-list>
+            <p class="menu-title">Your Account</p>
+            <mat-list-item routerLink="profile" routerLinkActive=" list-item-active">profle</mat-list-item>
+            <mat-list-item routerLink="orders" routerLinkActive="list-item-active">orders</mat-list-item>
+            <mat-list-item routerLink="address" routerLinkActive="list-item-active">address</mat-list-item>
+            <mat-list-item routerLink="analytics" routerLinkActive="list-item-active">analytics</mat-list-item>
+            <mat-list-item routerLink="account-details" routerLinkActive="list-item-active">account details
+            </mat-list-item>
+            <mat-list-item>logout</mat-list-item>
+
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

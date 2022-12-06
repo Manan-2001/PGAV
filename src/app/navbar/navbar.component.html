@@ -1,102 +1,65 @@
-<nav
-  class="navbar navbar-expand-sm navbar-dark"
-  style="background-color: rgba(245, 245, 245, 0.671)"
->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgba(245, 245, 245, 0.671)">
   <div class="container-fluid">
-    <img
-      class="navbar-brand"
-      src="../assets/image/PGAV.png"
-      style="height: 30px; width: 210px; margin-left: 2%"
-    />
 
-    <img
-      src="../assets/image/PGAV.png"
-      style="height: 30px; width: 210px;"
-    />
+    <img src="../assets/image/PGAV.png" style="height: 30px; width: 210px" routerLink="home" />
 
-    <input
-      class="form-control"
-      type="text"
-      placeholder="   Search"
-      style="
+    <input class="form-control" type="text" placeholder="   Search" style="
         margin-left: 1%;
         border-radius: 25px;
         border-color: lightslategray;
         font-size: 10pt;
-      "
-    />
-    <button
-      class="btn btn-primary"
-      type="button"
-      style="margin-left: 1%; border-radius: 14px; font-size: 13pt;background-color: #0047AB;"
-    >
+      " />
+    <button class="btn btn-primary" type="button" style="
+        margin-left: 1%;
+        border-radius: 14px;
+        font-size: 13pt;
+        background-color: #0047ab;
+      ">
       Search
     </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px; margin-left: 0%"
-    >
+    <button class="btn btn-outline-light btn-sm" style="width: 100px; border-radius: 25px; margin-left: 0%">
       <a class="nav-link text-black" style="font-size: 13pt" routerLink="dashboard">
-        <b>Dashboard</b></a
-      >
+        <b>Dashboard</b></a>
     </button>
 
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px; margin-left: 1%"
-    >
+    <button class="btn btn-outline-light btn-sm" style="width: 100px; border-radius: 25px; margin-left: 1%">
       <a class="nav-link text-black" style="font-size: 13pt" routerLink="home">
-        <b>Home</b></a
-      >
+        <b>Home</b></a>
     </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px;"
-      data-bs-toggle="collapse"
-      data-bs-target="#demo"
-    >
-      <a class="nav-link text-black" style="font-size: 13pt">
-        <b>Services <i class="fa">&#xf103;</i></b></a
-      >
+
+    <div class="dropdown">
+      <button class="btn btn-outline-light btn-sm" style="width: 120px; border-radius: 15px" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <a class="nav-link text-black" style="font-size: 13pt">
+          <b>Services <i class="fa">&#xf103;</i></b></a>
+      </button>
+      <ul class="dropdown-menu" style="border-radius: 7px;">
+        <li><a class="dropdown-item" routerLink="tiffin">Tiffin</a></li>
+        <li><a class="dropdown-item" routerLink="vehicle">Vehicle</a></li>
+        <li><a class="dropdown-item" routerLink="Accomodation">Accomodation</a></li>
+        <li><a class="dropdown-item" routerLink="Appliances">Appliances</a></li>
+      </ul>
+    </div>
+
+    <button class="btn btn-outline-light btn-sm" style="width: 100px; border-radius: 25px">
+      <a class="nav-link text-black" style="font-size: 13pt" routerLink="offers">
+        <b>Offers %</b></a>
     </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px;"
-    >
-      <a
-        class="nav-link text-black"
-        style="font-size: 13pt"
-        routerLink="offers"
-      >
-        <b>Offers %</b></a
-      >
-    </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px;"
-    >
+    <button class="btn btn-outline-light btn-sm" style="width: 100px; border-radius: 25px">
       <a class="nav-link text-black" routerLink="checkout" style="font-size: 13pt">
-        <b>Checkout</b></a
-      >
+        <b>Checkout</b></a>
     </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      style="width: 100px; border-radius: 25px;"
-    >
+    <button class="btn btn-outline-light btn-sm" style="width: 100px; border-radius: 25px">
       <a class="nav-link text-black" style="font-size: 13pt">
-        <b><i style="font-size: 24px" class="fa">&#xf290;</i> Cart</b></a
-      >
+        <b><i style="font-size: 24px" class="fa">&#xf290;</i> Cart</b></a>
     </button>
-    <button
-      class="btn btn-outline-light btn-sm"
-      routerLink="Login"
-      style="width: 100px; border-radius: 25px; margin-left: 0%"
-    >
+    <button class="btn btn-outline-light btn-sm" routerLink="Login"
+      style="width: 100px; border-radius: 25px; margin-left: 0%">
       <a class="nav-link text-black" style="font-size: 15pt"> <b>Login</b></a>
     </button>
   </div>
 </nav>
-
+<!-- 
 <div id="demo" class="collapse">
   <div class="row" style="margin-top: -20px">
     <div class="col">
@@ -120,4 +83,4 @@
       </button>
     </div>
   </div>
-</div>
+</div> -->

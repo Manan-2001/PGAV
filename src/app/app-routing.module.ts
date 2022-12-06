@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { AppliancesComponent } from './appliances/appliances.component';
 import { HomeComponent } from './home/home.component';
@@ -13,14 +14,13 @@ import { OffersComponent } from './offers/offers.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfilePageComponent } from './dashboard/component/profile-page/profile-page.component';
+import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
+import { AddressPageComponent } from './dashboard/component/address-page/address-page.component';
+import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
+import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
 
 const routes: Routes = [
-
-  {
-    path: "",
-    component: HomeComponent
-  },
-
   {
     path: "Login",
     component: LoginComponent
@@ -85,7 +85,33 @@ const routes: Routes = [
   },
   {
     path: "dashboard",
-    component: DashboardComponent
+    component: DashboardComponent,
+    children: [
+      {
+        path: '',
+        component: ProfilePageComponent
+      },
+      {
+        path: 'profile',
+        component: ProfilePageComponent
+      },
+      {
+        path: 'orders',
+        component: OrdersPageComponent
+      },
+      {
+        path: 'address',
+        component: AddressPageComponent
+      },
+      {
+        path: 'analytics',
+        component: AnalyticsPageComponent
+      },
+      {
+        path: 'account-details',
+        component: AccountDetailsPageComponent
+      }
+    ]
   },
 ];
 
