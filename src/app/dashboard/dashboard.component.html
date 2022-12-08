@@ -1,7 +1,8 @@
 <mat-sidenav-container>
     <mat-sidenav mode="side" opened="">
         <mat-list>
-            <p class="menu-title">Your Account</p>
+            <p class="menu-title" style="display: inline;">Your Account</p>
+            <div class="" style="display: inline; float: right;"><button class="btn btn-danger">X</button></div>
             <mat-list-item routerLink="profile" routerLinkActive=" list-item-active">profle</mat-list-item>
             <mat-list-item routerLink="orders" routerLinkActive="list-item-active">orders</mat-list-item>
             <mat-list-item routerLink="address" routerLinkActive="list-item-active">address</mat-list-item>
@@ -12,6 +13,8 @@
 
         </mat-list>
     </mat-sidenav>
+    <div class="col-lg-12 my-2"> <button class="btn btn-primary">Side Bar Menu</button>
+    </div>
     <mat-sidenav-content>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
