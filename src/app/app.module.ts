@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { TiffinComponent } from './tiffin/tiffin.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
@@ -25,7 +25,21 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { OffersComponent } from './offers/offers.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
+
+//angular material imports
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+
+// pages inside of dashboard
+import { ProfilePageComponent } from './dashboard/component/profile-page/profile-page.component';
+import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
+import { AddressPageComponent } from './dashboard/component/address-page/address-page.component';
+import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
+import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component'
 
 
 @NgModule({
@@ -54,10 +68,20 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CheckoutComponent,
     DashboardComponent,
 
+    //dashboard pages
+    ProfilePageComponent,
+    OrdersPageComponent,
+    AddressPageComponent,
+    AccountDetailsPageComponent,
+    AnalyticsPageComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
