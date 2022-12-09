@@ -39,7 +39,8 @@ import { ProfilePageComponent } from './dashboard/component/profile-page/profile
 import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
 import { AddressPageComponent } from './dashboard/component/address-page/address-page.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
-import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component'
+import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
+import { CartComponent } from './cart/cart.component'
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { AnalyticsPageComponent } from './dashboard/component/analytics-page/ana
     OrdersPageComponent,
     AddressPageComponent,
     AccountDetailsPageComponent,
-    AnalyticsPageComponent
+    AnalyticsPageComponent,
+    CartComponent
 
   ],
   imports: [
