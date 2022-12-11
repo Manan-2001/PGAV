@@ -18,6 +18,7 @@ import { ProfilePageComponent } from './dashboard/component/profile-page/profile
 import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
 import { AddressPageComponent } from './dashboard/component/address-page/address-page.component';
 import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
+import { CartComponent } from './cart/cart.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   },
   {
     path: "home",
+    component: HomeComponent
+  },
+  {
+    path: "",
     component: HomeComponent
   },
 
@@ -77,6 +82,10 @@ const routes: Routes = [
   {
     path: "checkout",
     component: CheckoutComponent
+  },
+  {
+    path: "cart",
+    component: CartComponent
   },
 
   {
