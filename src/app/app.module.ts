@@ -32,6 +32,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 //angular material imports
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+
+
 
 
 // pages inside of dashboard
@@ -79,9 +85,14 @@ import { AnalyticsPageComponent } from './dashboard/component/analytics-page/ana
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSidenavModule,
     BrowserAnimationsModule,
-    MatListModule
+
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
