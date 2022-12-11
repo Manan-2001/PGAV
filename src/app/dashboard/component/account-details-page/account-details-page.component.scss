@@ -1,8 +1,46 @@
-:host {
-  //   display: flex;
-  overflow: hidden;
-  // flex-direction: column;
-  height: 100%;
+@import "../../../../styles.scss";
+
+.account-details-header {
+  font-size: 25px;
+  font-family: "arima", sans-serif;
+  margin-left: 5%;
 }
 .account-details-container {
+  margin-top: 1%;
+  margin-left: 5%;
+  // background-color: aqua;
+}
+.password-change-title {
+  font-size: 19px;
+  font-family: "arima", sans-serif;
+}
+
+@media screen and (max-width: 768px) and (min-width: 430px) {
+  .account-details-header {
+    font-size: 25px;
+    font-family: "arima", sans-serif;
+  }
+  .account-details-container {
+    margin-top: 1%;
+    // background-color: aqua;
+  }
+  .password-change-title {
+    font-size: 19px;
+    font-family: "arima", sans-serif;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .account-details-header {
+    font-size: 25px;
+    font-family: "arima", sans-serif;
+  }
+  .account-details-container {
+    margin-top: 1%;
+    // background-color: aqua;
+  }
+  .password-change-title {
+    font-size: 19px;
+    font-family: "arima", sans-serif;
+  }
 }

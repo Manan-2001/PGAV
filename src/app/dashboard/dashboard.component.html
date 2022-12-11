@@ -1,20 +1,40 @@
+<mat-toolbar>
+    <button class="sidenav-button" mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+</mat-toolbar>
+
 <mat-sidenav-container>
-    <mat-sidenav mode="side" opened="">
+    <mat-sidenav #sidenav="matSidenav">
         <mat-list>
-            <p class="menu-title">Your Account</p>
-            <mat-list-item routerLink="profile" routerLinkActive=" list-item-active">Profile</mat-list-item>
-            <mat-list-item routerLink="orders" routerLinkActive="list-item-active">Orders</mat-list-item>
-            <mat-list-item routerLink="address" routerLinkActive="list-item-active">Address</mat-list-item>
-            <mat-list-item routerLink="analytics" routerLinkActive="list-item-active">Analytics</mat-list-item>
-            <mat-list-item routerLink="account-details" routerLinkActive="list-item-active">Account details
-            </mat-list-item>
-            <mat-list-item>Logout</mat-list-item>
+            <p class="sidenav-title">Your Account</p>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item routerLink="profile">Profile</mat-list-item>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item routerLink="orders">Order</mat-list-item>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item routerLink="address">Address</mat-list-item>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item routerLink="account-details">Account Details</mat-list-item>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item routerLink="analytics">Analytics</mat-list-item>
+            <mat-divider style="color:white;"></mat-divider>
+
+            <mat-list-item>Log Out</mat-list-item>
 
         </mat-list>
     </mat-sidenav>
-    <div class="col-lg-12 my-2"> <button class="btn btn-primary">Side Bar Menu</button>
-    </div>
-    <mat-sidenav-content>
+    <mat-sidenav-content class=" mat-elevation-z4">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
