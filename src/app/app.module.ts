@@ -46,7 +46,8 @@ import { OrdersPageComponent } from './dashboard/component/orders-page/orders-pa
 import { AddressPageComponent } from './dashboard/component/address-page/address-page.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
 import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
-import { CartComponent } from './cart/cart.component'
+import { CartComponent } from './cart/cart.component';
+import { LogoutPageComponent } from './dashboard/component/logout-page/logout-page.component'
 
 
 @NgModule({
@@ -81,7 +82,8 @@ import { CartComponent } from './cart/cart.component'
     AddressPageComponent,
     AccountDetailsPageComponent,
     AnalyticsPageComponent,
-    CartComponent
+    CartComponent,
+    LogoutPageComponent
 
   ],
   imports: [

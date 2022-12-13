@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AccomodationComponent } from './accomodation/accomodation.component';
@@ -20,6 +20,8 @@ import { AddressPageComponent } from './dashboard/component/address-page/address
 import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
+import { LogoutPageComponent } from './dashboard/component/logout-page/logout-page.component';
+
 
 const routes: Routes = [
   {
@@ -119,6 +121,10 @@ const routes: Routes = [
       {
         path: 'account-details',
         component: AccountDetailsPageComponent
+      },
+      {
+        path: 'log-out',
+        component: LogoutPageComponent
       }
     ]
   },
