@@ -21,6 +21,7 @@ import { AnalyticsPageComponent } from './dashboard/component/analytics-page/ana
 import { CartComponent } from './cart/cart.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
 import { LogoutPageComponent } from './dashboard/component/logout-page/logout-page.component';
+import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
 
 
 const routes: Routes = [
@@ -128,6 +129,10 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'seller-dashboard',
+    component: SellerDashboardComponent
+  }
 ];
 
 @NgModule({
