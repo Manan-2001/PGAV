@@ -13,6 +13,7 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { OffersComponent } from './offers/offers.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilePageComponent } from './dashboard/component/profile-page/profile-page.component';
 import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
@@ -21,8 +22,12 @@ import { AnalyticsPageComponent } from './dashboard/component/analytics-page/ana
 import { CartComponent } from './cart/cart.component';
 import { AccountDetailsPageComponent } from './dashboard/component/account-details-page/account-details-page.component';
 import { LogoutPageComponent } from './dashboard/component/logout-page/logout-page.component';
-import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
 
+import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
+import { SellerProfilePageComponent } from './seller-dashboard/components/seller-profile-page/seller-profile-page.component';
+import { SellerAnalyticsPageComponent } from './seller-dashboard/components/seller-analytics-page/seller-analytics-page.component';
+import { SellerLogoutPageComponent } from './seller-dashboard/components/seller-logout-page/seller-logout-page.component';
+import { SellerOrdersPageComponent } from './seller-dashboard/components/seller-orders-page/seller-orders-page.component';
 
 const routes: Routes = [
   {
@@ -131,12 +136,35 @@ const routes: Routes = [
   },
   {
     path: 'seller-dashboard',
-    component: SellerDashboardComponent
+    component: SellerDashboardComponent,
+    children: [
+      {
+        path: '',
+        component: SellerProfilePageComponent
+      },
+      {
+        path: 'seller-profile-page',
+        component: SellerProfilePageComponent
+      },
+      {
+        path: 'seller-analytics-page',
+        component: SellerAnalyticsPageComponent
+      },
+      {
+        path: 'seller-logout-page',
+        component: SellerLogoutPageComponent
+      },
+      {
+        path: 'seller-order-page',
+        component: SellerOrdersPageComponent
+      }
+    ]
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
   exports: [RouterModule]
 })
 export class AppRoutingModule {

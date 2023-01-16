@@ -37,9 +37,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 
-
-
-
 // pages inside of dashboard
 import { ProfilePageComponent } from './dashboard/component/profile-page/profile-page.component';
 import { OrdersPageComponent } from './dashboard/component/orders-page/orders-page.component';
@@ -48,7 +45,13 @@ import { AccountDetailsPageComponent } from './dashboard/component/account-detai
 import { AnalyticsPageComponent } from './dashboard/component/analytics-page/analytics-page.component';
 import { CartComponent } from './cart/cart.component';
 import { LogoutPageComponent } from './dashboard/component/logout-page/logout-page.component';
-import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component'
+
+// pages inside of seller dashboard
+import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
+import { SellerOrdersPageComponent } from './seller-dashboard/components/seller-orders-page/seller-orders-page.component';
+import { SellerProfilePageComponent } from './seller-dashboard/components/seller-profile-page/seller-profile-page.component';
+import { SellerAnalyticsPageComponent } from './seller-dashboard/components/seller-analytics-page/seller-analytics-page.component';
+import { SellerLogoutPageComponent } from './seller-dashboard/components/seller-logout-page/seller-logout-page.component'
 
 
 @NgModule({
@@ -85,7 +88,13 @@ import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.co
     AnalyticsPageComponent,
     CartComponent,
     LogoutPageComponent,
-    SellerDashboardComponent
+
+    //seller Dashboard pages
+    SellerDashboardComponent,
+    SellerOrdersPageComponent,
+    SellerProfilePageComponent,
+    SellerAnalyticsPageComponent,
+    SellerLogoutPageComponent
 
   ],
   imports: [
