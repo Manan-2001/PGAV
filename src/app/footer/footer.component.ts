@@ -27,7 +27,6 @@ export class FooterComponent implements OnInit {
       retailPrice: new FormControl(''),
     }
   )
-
   furnitureForm = new FormGroup(
     {
       firstName: new FormControl(''),
@@ -42,11 +41,18 @@ export class FooterComponent implements OnInit {
       retailPrice: new FormControl(''),
     }
   )
-  applianceList: any = []
 
-  sendToSlider() {
+  applianceList: any = [];
+  furnitureList: any = [];
+
+  sendToApplianceSlider() {
     this.applianceList.push(this.applianceForm.value);
     localStorage.setItem('appliancesList', JSON.stringify(this.applianceList));
+  }
+
+  sendToFurnitureSlider() {
+    this.furnitureList.push(this.furnitureForm.value);
+    localStorage.setItem('furnitureList', JSON.stringify(this.furnitureList));
   }
 
 
