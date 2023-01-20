@@ -835,19 +835,19 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form>
+        <form [formGroup]="applianceForm">
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="row mb-4">
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">First name:</label>&nbsp;
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="firstName" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Last name:</label>
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="lastName" />
               </div>
             </div>
           </div>
@@ -856,13 +856,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Mobile Number:</label>&nbsp;
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="mobileNumber" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Address:</label>
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="address" />
               </div>
             </div>
           </div>
@@ -871,13 +871,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Pin Code:</label>&nbsp;
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="pinCode" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Item Name:</label>&nbsp;
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="itemName" />
               </div>
             </div>
           </div>
@@ -886,7 +886,7 @@
             <div class="col-lg-12 col-md-12 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Description :</label>&nbsp;
-                <input type="" id="" class="form-control" />
+                <input type="" id="" class="form-control" formControlName="description" />
               </div>
             </div>
           </div>
@@ -895,7 +895,8 @@
             <div class="col-lg-12 col-md-12 col-12">
               <div class="form-outline">
                 <label class="form-label mt-3" for="">Add Images :</label>&nbsp;
-                <input type="file" id="" class="form-control" />
+                <input type="file" id="" class="form-control" (change)="onFileChange($event)"
+                  formControlName="addImage" />
               </div>
             </div>
           </div>
@@ -904,13 +905,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Retail Price:</label>
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="rentPrice" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="form-outline">
                 <label class="form-label" for="">Rent Price:</label>
-                <input type="text" id="" class="form-control" />
+                <input type="text" id="" class="form-control" formControlName="retailPrice" />
               </div>
             </div>
           </div>
@@ -920,7 +921,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="sendToSlider()">
           Submit
         </button>
       </div>
@@ -945,7 +946,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form>
+        <form [formGroup]="furnitureForm">
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="row mb-4">
             <div class="col-lg-6 col-md-6 col-12">
@@ -1005,7 +1006,7 @@
             <div class="col-lg-12 col-md-12 col-12">
               <div class="form-outline">
                 <label class="form-label mt-3" for="">Add Images :</label>&nbsp;
-                <input type="file" id="" class="form-control" />
+                <input type="file" id="" class="form-control" (change)="onFileChange($event)" />
               </div>
             </div>
           </div>

@@ -52,6 +52,7 @@ import { SellerOrdersPageComponent } from './seller-dashboard/components/seller-
 import { SellerProfilePageComponent } from './seller-dashboard/components/seller-profile-page/seller-profile-page.component';
 import { SellerAnalyticsPageComponent } from './seller-dashboard/components/seller-analytics-page/seller-analytics-page.component';
 import { SellerLogoutPageComponent } from './seller-dashboard/components/seller-logout-page/seller-logout-page.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -101,13 +102,14 @@ import { SellerLogoutPageComponent } from './seller-dashboard/components/seller-
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    ReactiveFormsModule,
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
