@@ -109,6 +109,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
+    FormsModule,
 
   ],
   providers: [],

@@ -83,7 +83,7 @@
             <a href="#!" class="text-reset" data-bs-toggle="modal" data-bs-target="#myModal1">Advertise your Rooms</a>
           </p>
           <p>
-            <a href="#!" class="text-reset" data-bs-toggle="modal" data-bs-target="#myModal">Advertise your Vehicles</a>
+            <a href="#!" class="text-reset" data-bs-toggle="modal" data-bs-target="#myModal1">Advertise your Vehicles</a>
           </p>
           <p>
             <a href="#!" class="text-reset" data-bs-toggle="modal" data-bs-target="#myModal2">Advertise your tiffin</a>
@@ -194,413 +194,98 @@
       <div class="modal-header text-center" style="background-color: rgb(40, 126, 172)">
         <h4 class="modal-title text-white">ACCOMMODATION OWNER DETAILS FORM</h4>
 
-        <button type="button" class="close" data-dismiss="modal">
-          &times;
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">First name:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Last name:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
+        <form><div class="row mb-4">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example1">Full name:</label>&nbsp;
+              <input type="text" id="form6Example1" class="form-control" [(ngModel)]="name"/>
             </div>
           </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example2">Contact:</label>
+              <input type="text" id="form6Example2" class="form-control" [(ngModel)]="job"/>
+            </div>
+          </div>
+        </div>
 
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Contact:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Address:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
+        <div class="row mb-4">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example1">Address:</label>&nbsp;
+              <input type="text" id="form6Example1" class="form-control" [(ngModel)]="city" />
             </div>
           </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example2">City:</label>
+              <input type="text" id="form6Example2" class="form-control" [(ngModel)]="age"/>
+            </div>
+          </div>
+        </div>
 
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Aadhar No:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Pin Code:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
+        <div class="row mb-4" style="margin-top: -10px">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <div class="form-group">
+                <label for="sel2">Vehicle Type:</label>
 
-          <div class="row mb-4" style="margin-top: -10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <div class="form-group">
-                  <label for="sel2">Vehicle Type:</label>
+                <select class="form-control" id="sel1" name="sellist1" style="height: 35px">
+                  <option>Car</option>
+                  <option>Bike</option>
+                  <option>Moped</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example2">Vehicle Details:</label>
+              <input type="text" id="form6Example2" class="form-control" />
+            </div>
+          </div>
+        </div>
 
-                  <select class="form-control" id="sel1" name="sellist1" style="height: 35px">
-                    <option>Car</option>
-                    <option>Bike</option>
-                    <option>Moped</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Model:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
+       
+        <div class="row mb-4" style="margin-top: 10px">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example1">Price(per Day)::</label>&nbsp;
+              <input type="text" id="form6Example1" class="form-control" />
             </div>
           </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-outline">
+              <label class="form-label" for="form6Example2">Short Description:</label>
+              <input type="text" id="form6Example2" class="form-control" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mb-4" style="margin-top: 10px">
+          
+          <div class="col-lg-12 col-md-12 col-12">
+            <label class="form-label" for="form6Example1">Vehicle Images(Current):</label>
+            <input type="file" name="img" multiple />
+            <input id="input-2" name="input2[]" type="file" class="file" data-show-upload="false"
+              data-show-caption="true" multiple />
+          </div>
+        </div>
+    
 
-          <div class="row mb-4" style="margin-top: -20px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Manufacturing Year:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Vehicle Color</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Mileage:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Price(per Day):</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Extra Charges(Per Day):</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">License No:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: 0px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <div class="form-group">
-                  <label for="sel2">Vehicle Start Type:</label>
-
-                  <select class="form-control" id="sel1" name="sellist1" style="height: 35px">
-                    <option>Self-Start</option>
-                    <option>Kick-Start</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Brand with Model No.:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: -10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Fuel:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Engine Capacity:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label for="commen">Short Description about Vehicle:</label>
-                <textarea class="form-control" rows="2" id="comment" required></textarea>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <label class="form-label" for="form6Example1">Vehicle Images(Current):</label>
-              <input type="file" name="img" multiple />
-              <input id="input-2" name="input2[]" type="file" class="file" data-show-upload="false"
-                data-show-caption="true" multiple />
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-12 col-md-12 col-12">
-              <div class="form-outline">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" />
-                  <p style="margin-left: 20px">
-                    I agree with terms & conditions.<br />One Helmet is
-                    complimentary with the bike.The security deposit is
-                    refundable once we receive the bike in proper condition
-                    after 48 hours.You shall need to submit one Address proof in
-                    original and the copy of Driving License at the time of
-                    receiving the bike.Vehicles are limited to 100kms/day &
-                    2000kms/month (Exceeding Rs.5/Km). Inform us at least 30min
-                    before reach that location.Monthly booking deposit Rs.200.
-                    If the bike is not available We will give the alternative
-                    bike with Proper condition.
-                  </p>
-                </label>
-              </div>
-            </div>
-          </div>
         </form>
       </div>
 
-      <!-- Modal footer -->
+     
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Submit
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header text-center" style="background-color: white">
-        <h4 class="modal-title text-black">VEHICLE OWNER DETAILS FORM</h4>
-
-        <button type="button" class="close" data-dismiss="modal" style="color: black;">
-          &times;
-        </button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">First name:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Last name:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Contact:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Address:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Aadhar No:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Pin Code:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: -10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <div class="form-group">
-                  <label for="sel2">Vehicle Type:</label>
-
-                  <select class="form-control" id="sel1" name="sellist1" style="height: 35px">
-                    <option>Car</option>
-                    <option>Bike</option>
-                    <option>Moped</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Model:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: -20px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Manufacturing Year:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Vehicle Color</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Mileage:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Price(per Day):</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Extra Charges(Per Day):</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">License No:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: 0px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <div class="form-group">
-                  <label for="sel2">Vehicle Start Type:</label>
-
-                  <select class="form-control" id="sel1" name="sellist1" style="height: 35px">
-                    <option>Self-Start</option>
-                    <option>Kick-Start</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Brand with Model No.:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: -10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example1">Fuel:</label>&nbsp;
-                <input type="text" id="form6Example1" class="form-control" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label class="form-label" for="form6Example2">Engine Capacity:</label>
-                <input type="text" id="form6Example2" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="form-outline">
-                <label for="commen">Short Description about Vehicle:</label>
-                <textarea class="form-control" rows="2" id="comment" required></textarea>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-              <label class="form-label" for="form6Example1">Vehicle Images(Current):</label>
-              <input type="file" name="img" multiple />
-              <input id="input-2" name="input2[]" type="file" class="file" data-show-upload="false"
-                data-show-caption="true" multiple />
-            </div>
-          </div>
-
-          <div class="row mb-4" style="margin-top: 10px">
-            <div class="col-lg-12 col-md-12 col-12">
-              <div class="form-outline">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" />
-                  <p style="margin-left: 20px">
-                    I agree with terms & conditions.<br />One Helmet is
-                    complimentary with the bike.The security deposit is
-                    refundable once we receive the bike in proper condition
-                    after 48 hours.You shall need to submit one Address proof in
-                    original and the copy of Driving License at the time of
-                    receiving the bike.Vehicles are limited to 100kms/day &
-                    2000kms/month (Exceeding Rs.5/Km). Inform us at least 30min
-                    before reach that location.Monthly booking deposit Rs.200.
-                    If the bike is not available We will give the alternative
-                    bike with Proper condition.
-                  </p>
-                </label>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Submit
-        </button>
+        <button type="button" class="btn btn-danger" (click)="clear()" >Cancel</button>
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal" (click)="update()" *ngIf="isEditBtnClicked=='yes'" [disabled]="name == '' || age == '' || job == '' || city == ''" >Update</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal" (click)="submit()" *ngIf="isEditBtnClicked=='no'" [disabled]="name == '' || age == '' || job == '' || city == ''" >Submit</button>
       </div>
     </div>
   </div>
