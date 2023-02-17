@@ -5,11 +5,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tiffin.component.html',
   styleUrls: ['./tiffin.component.scss']
 })
-export class TiffinComponent implements OnInit {
+export class TiffinComponent {
 
-  constructor() { }
+   thali="";
+   price="";
+   details="";
 
-  ngOnInit(): void {
+   isEditBtnClicked=false;
+   isUpdateBtnClicked=false;
+   selectedIndex='';
+   menuList:any=[];
+
+   submit(){
+    let menu={
+      thali:this.thali,
+      price:this.price,
+      details:this.details
+    }
+    this.menuList.push(menu)
+
+
   }
 
 }
