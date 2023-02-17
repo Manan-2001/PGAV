@@ -51,12 +51,13 @@ const routes: Routes = [
     path: "tiffin",
     component: TiffinComponent
   },
+  
   {
-    path: "home",
+    path: '',
     component: HomeComponent
   },
   {
-    path: "",
+    path: "home",
     component: HomeComponent
   },
 

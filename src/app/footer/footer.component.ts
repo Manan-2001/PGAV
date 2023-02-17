@@ -81,4 +81,54 @@ export class FooterComponent implements OnInit {
       this.url = reader.result;
     }
   }
+
+  name = '';
+  age ='';
+  job = '';
+  city = '';
+  selectedIndex = '';
+  isEditBtnClicked = "no";
+  
+  
+  userList:any = []
+  
+
+  submit(){
+    let user ={
+      name:this.name,
+      age:this.age,
+      job:this.job,
+      city:this.city,
+      }
+      this.userList.push(user)
+      this.clear()
+  }
+
+  clear(){
+    this.name="";
+    this.age="";
+    this.job="";
+    this.city="";
+  }
+  delete(idx:any){
+    console.log('idx',idx);
+    this.userList.splice(idx,1);
+
+  }
+  edit(idx:any){
+    this.isEditBtnClicked="yes";
+    this.selectedIndex = idx;
+    this.name=this.userList[idx].name;
+    this.age=this.userList[idx].age;
+    this.job=this.userList[idx].job;
+    this.city=this.userList[idx].city;
+  }
+  update(){
+    this.userList[this.selectedIndex].name = this.name;
+    this.userList[this.selectedIndex].age = this.age;
+    this.userList[this.selectedIndex].job = this.job;
+    this.userList[this.selectedIndex].city = this.city;
+    this.clear();
+    this.isEditBtnClicked="no";
+  }
 }
