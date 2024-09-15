@@ -34,7 +34,7 @@ import { SellerOrdersPageComponent } from './seller-dashboard/components/seller-
 const routes: Routes = [
   {
     path: "Login",
-    component: LoginComponent
+    component: LoginComponent,
   },
 
   {
